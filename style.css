@@ -1,0 +1,274 @@
+button, button:active, button:focus { outline: none; }
+/*скрывающийся поиск старт*/
+.search {
+  display: table;
+}
+.search input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 28px;
+  min-width: 0;
+  padding: 0;
+  z-index: 1;
+  position: relative;
+  line-height: 18px;
+  margin: 5px 0;
+  font-size: 14px;
+  -webkit-appearance: none;
+  font-family: 'Mukta Malar';
+  transition: all .6s ease;
+  cursor: pointer;
+  color: #000;
+}
+.search input + div {
+  position: relative;
+  height: 28px;
+  width: 100%;
+  margin: -28px 0 0 0;
+}
+.search input + div svg {
+  display: block;
+  position: absolute;
+  height: 28px;
+  width: 160px;
+  right: 0;
+  top: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+  stroke-dashoffset: 271.908;
+  stroke-dasharray: 59 212.908;
+  transition: all .6s ease;
+}
+.search input:not(:placeholder-shown), .search input:focus {
+  width: 160px;
+  padding: 0 4px;
+  cursor: text;
+}
+.search input:not(:placeholder-shown) + div svg, .search input:focus + div svg {
+  stroke-dasharray: 150 212.908;
+  stroke-dashoffset: 300;
+}
+
+::-moz-selection {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::-moz-selection {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+.dribbble {
+  position: fixed;
+  display: block;
+  right: 24px;
+  bottom: 24px;
+}
+.dribbble img {
+  display: block;
+  width: 76px;
+}
+form {
+  display: inline-flex;
+}
+/*скрывающийся поиск енд*/
+/*остальная часть навбара старт*/
+.navbar-nav{
+  margin-left: 5%;
+}
+.name {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  align-items: center;
+  color: #151C22;
+}
+.nav-link{
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  color: #151C22;
+}
+/*остальная часть навбара енд*/
+/*первый блок старт*/
+.first{
+  background: #F1F2F4;
+}
+
+.div-first{
+  margin-top: 20%;
+  text-align: left;
+
+}
+.div-first h1{
+  font-family: Anton;
+font-style: normal;
+font-weight: normal;
+font-size: 128px;
+line-height: 188px;
+line-height: 1;
+align-items: center;
+
+color: #151C22;
+}
+.div-first p{
+font-family: Work Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+
+margin: 0;
+color: #727A82;
+}
+
+.div-first button{
+font-family: Work Sans;
+font-style: normal;
+margin-top: 30px;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+padding: 20px;
+align-items: center;
+background-color: #151C22;
+border: none;
+color: #FFFFFF;
+}
+/*первый блок енд*/
+/*основной блок старт*/
+.div-os{
+  margin-top: 80px;
+}
+.div-os h2{
+  font-family: Work Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 38px;
+display: flex;
+align-items: center;
+
+color: #151C22;
+}
+.div-os a{
+  font-family: Work Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+border-bottom: 2px solid #151C22;
+align-items: center;
+
+color: #151C22;
+}
+.grid{
+  display: grid;
+  margin-top: 40px;
+  grid-template-areas:
+ "j o z x";
+ grid-gap: 20px;
+ max-width: 100%;
+ font-family: Work Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+line-height: 1;
+color: #151C22;
+}
+.grid img{
+  padding-bottom: 10px;
+}
+.div-grid1{
+  grid-area: j;
+}
+.div-grid2{
+  grid-area: o;
+}
+.div-grid3{
+  grid-area: z;
+}
+.div-grid4{
+  grid-area: x;
+}
+.rrr {
+    padding: 0;
+    margin: 0;
+}
+.rrr img {
+  width: 100%;
+  padding-bottom: 80px;
+}
+.yyy{
+  background-image: url("img/pol.png");
+  background-size: cover;
+}
+.yyy .row{
+  margin: 0;
+}
+.mmm{
+  font-family: Work Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+  padding: 40px;
+  margin-top: 5%;
+  background-color: #F1F2F4;
+}
+.mmm button{
+  font-family: Work Sans;
+font-style: normal;
+margin-top: 30px;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+padding: 20px;
+align-items: center;
+background-color: #151C22;
+border: none;
+color: #FFFFFF;
+}
+.mmm h1{
+  font-family: Work Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+
+color: #151C22;
+}
+.mmm p{
+color: #727A82;
+}
+/*основной блок енд*/
+/**/
+footer{
+  background-color: #151C22;
+  padding-bottom: 20px;
+}
+footer .name{
+color: white;
+}
+footer a {
+  color: white;
+}
+/**/
